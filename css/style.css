@@ -1,0 +1,19 @@
+body {
+  background-color: #0C0E12;
+  color: #94A3B8;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+::selection {
+  background-color: #22252E;
+  color: #F4F4F6;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 20;
+}
+
+/* Fallback so mobile menu links don't get clipped by sticky header on jump */
+html {
+  scroll-padding-top: 80px;
+}
