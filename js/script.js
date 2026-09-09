@@ -7,19 +7,23 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!menuButton || !mobileMenu || !menuIcon) return;
 
   const closeMenu = () => {
-    mobileMenu.classList.add('hidden');
+    mobileMenu.style.display = 'none';
     menuButton.setAttribute('aria-expanded', 'false');
     menuIcon.textContent = 'menu';
   };
 
+  const openMenu = () => {
+    mobileMenu.style.display = 'flex';
+    menuButton.setAttribute('aria-expanded', 'true');
+    menuIcon.textContent = 'close';
+  };
+
   const toggleMenu = () => {
-    const isOpen = !mobileMenu.classList.contains('hidden');
+    const isOpen = mobileMenu.style.display === 'flex';
     if (isOpen) {
       closeMenu();
     } else {
-      mobileMenu.classList.remove('hidden');
-      menuButton.setAttribute('aria-expanded', 'true');
-      menuIcon.textContent = 'close';
+      openMenu();
     }
   };
 
