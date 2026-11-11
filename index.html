@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adrin Joseph — AI / LLM / AI Backend Engineer</title>
+    <meta
+      name="description"
+      content="Adrin Joseph — AI / LLM / AI Backend Engineer in Bangalore. Production RAG backends, hybrid search pipelines and fault-tolerant LLM gateways with Python, FastAPI, PostgreSQL and Redis."
+    />
+    <meta name="theme-color" content="#05080d" />
+    <meta property="og:title" content="Adrin Joseph — AI / LLM / AI Backend Engineer" />
+    <meta
+      property="og:description"
+      content="Production RAG backends, hybrid search and resilient LLM gateways. Based in Bangalore."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-ink font-sans text-mist antialiased selection:bg-ember/30 selection:text-snow">
+    <!-- scroll progress -->
+    <div id="progress" class="fixed left-0 top-0 z-[60] h-[2px] w-full origin-left scale-x-0"></div>
+
+    <!-- ───────── HEADER ───────── -->
+    <header id="site-header" data-scrolled="false" class="fixed inset-x-0 top-0 z-50 px-3 pt-3 sm:px-6 sm:pt-4">
+      <div class="mx-auto max-w-6xl">
+        <div class="bar flex items-center justify-between gap-4 rounded-full px-4 py-2.5 sm:px-6">
+          <a href="#home" class="group flex items-center gap-3">
+            <span class="font-serif text-2xl italic leading-none text-snow">Adrin</span>
+            <span class="hidden border-l border-white/15 pl-3 font-mono text-[11px] tracking-wide text-mist sm:inline">
+              AI / LLM / Backend Engineer
+            </span>
+          </a>
+
+          <nav class="hidden items-center gap-1 lg:flex" aria-label="Primary">
+            <a data-nav href="#about" class="nav-link">About</a>
+            <a data-nav href="#education" class="nav-link">Education</a>
+            <a data-nav href="#skills" class="nav-link">Skills</a>
+            <a data-nav href="#projects" class="nav-link">Projects</a>
+            <a data-nav href="#contact" class="nav-link">Contact</a>
+          </nav>
+
+          <div class="flex items-center gap-2">
+            <a href="/resume.pdf" target="_blank" rel="noopener" class="btn btn-primary hidden !py-2 !text-xs sm:inline-flex">
+              Resume
+            </a>
+            <button
+              id="menu-btn"
+              type="button"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+              aria-label="Toggle navigation menu"
+              class="grid h-10 w-10 place-items-center rounded-full border border-white/10 text-snow lg:hidden"
+            >
+              <svg id="icon-open" viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                <path d="M4 8h16M4 16h16" />
+              </svg>
+              <svg id="icon-close" viewBox="0 0 24 24" class="hidden h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                <path d="M6 6l12 12M18 6 6 18" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <nav id="mobile-menu" class="bar mt-2 hidden flex-col rounded-3xl p-3 lg:hidden" aria-label="Mobile">
+          <a data-nav href="#about" class="mobile-link">About</a>
+          <a data-nav href="#education" class="mobile-link">Education</a>
+          <a data-nav href="#skills" class="mobile-link">Skills</a>
+          <a data-nav href="#projects" class="mobile-link">Projects</a>
+          <a data-nav href="#contact" class="mobile-link">Contact</a>
+          <a href="/resume.pdf" target="_blank" rel="noopener" class="btn btn-primary mt-2 justify-center">Resume (PDF)</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ───────── HERO ───────── -->
+      <section id="home" class="relative isolate flex min-h-[100svh] items-center overflow-hidden pb-24 pt-32">
+        <div id="hero-bg" class="hero-bg" aria-hidden="true">
+          <div class="blobs">
+            <div class="blob cream"></div>
+            <div class="blob teal"></div>
+            <div class="blob ember"></div>
+          </div>
+          <div class="flutes"></div>
+          <div class="scrim"></div>
+          <div class="grain"></div>
+          <div class="fade-bottom"></div>
+        </div>
+
+        <div class="relative z-10 mx-auto grid w-full max-w-6xl gap-14 px-5 sm:px-8 lg:grid-cols-12 lg:items-center lg:gap-10">
+          <div class="space-y-8 lg:col-span-7">
+            <div class="rise inline-flex flex-wrap items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 font-mono text-[11px] text-sand backdrop-blur" style="--d: 100ms">
+              <span class="pulse-dot"></span>
+              Open to Junior AI / LLM / AI Backend roles · Bangalore
+            </div>
+
+            <h1 class="rise font-light leading-[1.02] tracking-tight text-snow" style="--d: 220ms">
+              <span class="block text-[2.75rem] sm:text-7xl lg:text-8xl">
+                Hi, I’m <span class="font-serif font-normal italic text-sand">Adrin</span>.
+              </span>
+              <span class="mt-3 block min-h-[1.2em] text-2xl text-snow/90 sm:text-4xl">
+                <span id="role-typer"></span><span class="caret"></span>
+              </span>
+            </h1>
+
+            <p class="rise max-w-xl text-base font-light leading-relaxed text-mist sm:text-lg" style="--d: 340ms">
+              I build production RAG backends and LLM gateways: hybrid search, verified citations, atomic token
+              budgets and circuit breakers, with FastAPI, PostgreSQL and Redis. Based in Bangalore.
+            </p>
+
+            <div class="rise flex flex-wrap items-center gap-3" style="--d: 460ms">
+              <a href="#projects" class="btn btn-primary">View projects <span aria-hidden="true">→</span></a>
+              <a href="/resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Resume</a>
+              <a href="https://github.com/adrinjoseph" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+              <a href="https://www.linkedin.com/in/adrin-joseph-84439a361/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+            </div>
+
+            <div class="rise border-t border-white/10 pt-6" style="--d: 580ms">
+              <p class="mb-3 font-mono text-[11px] uppercase tracking-[0.18em] text-mist/80">Core stack</p>
+              <ul class="flex flex-wrap gap-2">
+                <li class="chip">Python</li>
+                <li class="chip">FastAPI</li>
+                <li class="chip">PostgreSQL</li>
+                <li class="chip">pgvector</li>
+                <li class="chip">Redis</li>
+                <li class="chip">Docker</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="rise flex justify-center lg:col-span-5 lg:justify-end" style="--d: 400ms">
+            <div class="photo-wrap relative w-full max-w-sm sm:max-w-md">
+              <div class="photo-glow" aria-hidden="true"></div>
+              <div class="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-white/10 bg-card shadow-2xl shadow-black/60">
+                <img
+                  id="profile-img"
+                  src="public\images\profile.jpeg"
+                  alt="Portrait of Adrin Joseph"
+                  class="h-full w-full object-cover object-top"
+                  loading="eager"
+                  decoding="async"
+                />
+                <div id="profile-fallback" class="absolute inset-0 hidden place-items-center bg-gradient-to-br from-teal-deep/40 to-ember/30">
+                  <span class="font-serif text-8xl italic text-snow/90">AJ</span>
+                </div>
+                <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent"></div>
+                <div class="absolute inset-x-5 bottom-5 flex items-center justify-between font-mono text-[11px]">
+                  <span class="font-medium tracking-wide text-snow">Adrin Joseph</span>
+                  <span class="text-sand/80">Bangalore, India</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#about" class="scroll-cue absolute bottom-8 left-1/2 z-10 hidden -translate-x-1/2 sm:block" aria-label="Scroll to about">
+          <span></span>
+        </a>
+      </section>
+
+      <!-- marquee -->
+      <div class="relative overflow-hidden border-y border-line bg-ink-2 py-5" aria-hidden="true">
+        <div id="marquee" class="marquee flex w-max gap-10 font-mono text-xs uppercase tracking-[0.2em] text-mist/70"></div>
+      </div>
+
+      <!-- ───────── ABOUT ───────── -->
+      <section id="about" class="px-5 py-24 sm:px-8 sm:py-32">
+        <div class="mx-auto grid max-w-6xl gap-12 lg:grid-cols-12 lg:gap-16">
+          <div class="space-y-4 lg:col-span-4">
+            <p class="eyebrow reveal">01 — About</p>
+            <h2 class="section-title reveal" style="--d: 80ms">
+              Engineering robust AI backends from <span class="serif-accent">first principles</span>.
+            </h2>
+          </div>
+          <div class="space-y-6 text-base font-light leading-relaxed text-mist sm:text-lg lg:col-span-8">
+            <p class="reveal" style="--d: 120ms">
+              I’m an AI / LLM &amp; AI Backend Engineer focused on production systems: high-throughput async APIs,
+              real hybrid retrieval (dense + BM25), citation verification with abstention, and fault-tolerant LLM
+              gateways. I’m studying at <span class="text-snow">IIT Madras</span> (BS in Data Science and
+              Applications) and based in Bangalore.
+            </p>
+            <p class="reveal" style="--d: 200ms">
+              I build from first principles, with no LangChain or agent frameworks, so I can explain every line:
+              concurrency locks, token budgets, retry policies and evaluation harnesses with dev/test splits.
+            </p>
+            <div class="grid grid-cols-2 gap-3 pt-4 sm:grid-cols-4">
+              <div class="spot reveal card px-4 py-4" style="--d: 260ms"><p class="focus-k">Retrieval</p><p class="focus-v">Hybrid · BM25 + dense</p></div>
+              <div class="spot reveal card px-4 py-4" style="--d: 320ms"><p class="focus-k">Reliability</p><p class="focus-v">Breakers · retries</p></div>
+              <div class="spot reveal card px-4 py-4" style="--d: 380ms"><p class="focus-k">Evaluation</p><p class="focus-v">Recall@K · MRR</p></div>
+              <div class="spot reveal card px-4 py-4" style="--d: 440ms"><p class="focus-k">Cost control</p><p class="focus-v">Atomic token budgets</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ───────── EDUCATION ───────── -->
+      <section id="education" class="border-y border-line bg-ink-2 px-5 py-24 sm:px-8 sm:py-32">
+        <div class="mx-auto max-w-6xl space-y-12">
+          <div class="space-y-4">
+            <p class="eyebrow reveal">02 — Education</p>
+            <h2 class="section-title reveal" style="--d: 80ms">Academic <span class="serif-accent">foundation</span>.</h2>
+          </div>
+
+          <article class="spot reveal card relative overflow-hidden p-7 sm:p-10" style="--d: 140ms">
+            <div class="edu-glow" aria-hidden="true"></div>
+            <div class="relative flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <span class="chip !border-ember/40 !text-ember-2">BS Degree</span>
+                <h3 class="mt-4 font-serif text-4xl text-snow sm:text-5xl">IIT Madras</h3>
+                <p class="mt-2 text-lg text-sand">BS in Data Science and Applications</p>
+              </div>
+              <span class="font-mono text-xs text-mist sm:pt-2">2025 – 2029 · Ongoing</span>
+            </div>
+            <p class="relative mt-8 max-w-2xl border-t border-line pt-6 text-sm font-light leading-relaxed text-mist sm:text-base">
+              Rigorous coursework in mathematics, statistics, data structures and algorithms, database fundamentals
+              and machine learning.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ───────── SKILLS ───────── -->
+      <section id="skills" class="px-5 py-24 sm:px-8 sm:py-32">
+        <div class="mx-auto max-w-6xl space-y-12">
+          <div class="space-y-4">
+            <p class="eyebrow reveal">03 — Skills</p>
+            <h2 class="section-title reveal" style="--d: 80ms">Tools I <span class="serif-accent">ship</span> with.</h2>
+          </div>
+          <div id="skills-grid" class="grid gap-5 md:grid-cols-2 lg:grid-cols-3"></div>
+        </div>
+      </section>
+
+      <!-- ───────── PROJECTS ───────── -->
+      <section id="projects" class="border-y border-line bg-ink-2 px-5 py-24 sm:px-8 sm:py-32">
+        <div class="mx-auto max-w-6xl space-y-12">
+          <div class="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+            <div class="space-y-4">
+              <p class="eyebrow reveal">04 — Projects</p>
+              <h2 class="section-title reveal" style="--d: 80ms">Featured <span class="serif-accent">production</span> systems.</h2>
+            </div>
+            <p class="reveal max-w-xs text-sm text-mist" style="--d: 140ms">
+              Built from first principles with rigorous evaluation and resilience.
+            </p>
+          </div>
+
+          <div id="projects-list" class="space-y-6"></div>
+
+          <a
+            href="https://github.com/adrinjoseph"
+            target="_blank"
+            rel="noopener"
+            class="reveal inline-flex items-center gap-2 font-mono text-sm text-ember-2 transition-colors hover:text-sand"
+          >
+            Browse code on GitHub <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ───────── CONTACT ───────── -->
+      <section id="contact" class="relative isolate overflow-hidden px-5 py-24 sm:px-8 sm:py-32">
+        <div class="contact-glow" aria-hidden="true"></div>
+        <div class="relative mx-auto grid max-w-6xl gap-12 lg:grid-cols-12 lg:items-start">
+          <div class="space-y-7 lg:col-span-8">
+            <p class="eyebrow reveal">05 — Contact</p>
+            <h2 class="reveal text-4xl font-light leading-[1.05] tracking-tight text-snow sm:text-6xl lg:text-7xl" style="--d: 80ms">
+              Let’s build production <span class="serif-accent">AI systems</span>.
+            </h2>
+            <p class="reveal max-w-xl text-base font-light leading-relaxed text-mist sm:text-lg" style="--d: 140ms">
+              I’m looking for Junior AI Engineer, LLM Engineer and AI Backend Engineer roles in Bangalore where I
+              can build reliable retrieval, gateways and LLM services.
+            </p>
+            <div class="reveal flex flex-wrap items-center gap-3 pt-2" style="--d: 200ms">
+              <a href="mailto:adrinjosephkj@gmail.com" class="btn btn-primary font-mono">adrinjosephkj@gmail.com</a>
+              <a href="https://www.linkedin.com/in/adrin-joseph-84439a361/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+              <a href="https://github.com/adrinjoseph" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+              <a href="/resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">Resume (PDF)</a>
+            </div>
+          </div>
+
+          <aside class="spot reveal card space-y-5 p-7 lg:col-span-4" style="--d: 260ms">
+            <h3 class="font-medium text-snow">Details</h3>
+            <ul class="space-y-4 text-sm font-light">
+              <li class="flex items-start gap-3"><span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-ember"></span><span>Based in Bangalore, Karnataka</span></li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-ember"></span>
+                <a href="tel:+918547411242" class="transition-colors hover:text-snow">+91 85474 11242</a>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-ember"></span>
+                <a href="mailto:adrinjosephkj@gmail.com" class="break-all transition-colors hover:text-snow">adrinjosephkj@gmail.com</a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-line px-5 py-8 sm:px-8">
+      <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 font-mono text-xs text-mist/70 sm:flex-row">
+        <span class="font-medium text-snow">Adrin Joseph</span>
+        <span>Bangalore, India</span>
+        <p>© <span id="year">2026</span> Adrin Joseph</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
